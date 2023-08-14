@@ -1,6 +1,10 @@
 import Navbar from "./components/Navbar";
 import logo from "./logo.svg";
 // import './App.css';
+// "homepage": "https://MhmdAboMera.github.io/First-React-bootstrap-Website",
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build",
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHippo } from "@fortawesome/free-solid-svg-icons";
 import Landing from "./components/Landing";
