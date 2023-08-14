@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/First-React-bootstrap-Website/static/css/main.38ef16e6.css",
+    "main.js": "/First-React-bootstrap-Website/static/js/main.3afc98cd.js",
+    "static/js/787.5aa64192.chunk.js": "/First-React-bootstrap-Website/static/js/787.5aa64192.chunk.js",
+    "static/media/logo.svg": "/First-React-bootstrap-Website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/First-React-bootstrap-Website/index.html",
+    "main.38ef16e6.css.map": "/First-React-bootstrap-Website/static/css/main.38ef16e6.css.map",
+    "main.3afc98cd.js.map": "/First-React-bootstrap-Website/static/js/main.3afc98cd.js.map",
+    "787.5aa64192.chunk.js.map": "/First-React-bootstrap-Website/static/js/787.5aa64192.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ef16e6.css",
+    "static/js/main.3afc98cd.js"
+  ]
+}
