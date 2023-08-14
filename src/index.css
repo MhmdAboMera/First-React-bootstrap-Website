@@ -1,0 +1,203 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+:root{
+  --dark-coler: #19283f;
+  --green-coler: #33d1cc;
+  --red-coler: #ff3150;
+  --yellow-coler: #ffc400;
+  --section-coler:#eff7fa
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+/* start main title  */
+.main-title::after{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-coler);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* end main title  */
+/* start navbar  */
+.navbar {
+  background-color: var(--dark-coler);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-coler);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-coler) ;
+}
+.navbar .search svg {
+  color: var(--green-coler);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* end navbar  */
+/* start landing  */
+.landing {
+  min-height: calc(100vh - 72px);
+  background-color: var(--dark-coler);
+}
+/* end landing  */
+/* satrt featuers  */
+.features .icon-holder  {
+  height: 200px;
+}
+.features .icon-holder  svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem ;
+  color: var(--section-coler);
+} 
+.features .icon-holder .icon {
+  color: var(--green-coler);
+} 
+.features h4 {
+  color: var(--yellow-coler);
+}
+/* end featuers  */
+/* start Our Work  */
+.our-work {
+  background-color: var(--section-coler);
+}
+.our-work ul li {
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transform: .3s;
+}
+.our-work ul li:not(.active):hover{
+  color: white;
+  background-color: #0a58ca;
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(51 209 204 / 76%);
+  transition: .3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover:before {
+  transform: translateX(0);
+}
+.width-100 {
+  padding: 7px 25px !important; 
+}
+/* end Our Work  */
+/* start stuff  */
+.stuff .description {
+  max-width: 500px;
+}
+/* end stuff  */
+/* start team  */
+.team {
+  background-color: var(--section-coler);
+}
+.team h2 {
+  color: var(--yellow-coler);
+}
+.team .box h4 {
+  background-color: var(--green-coler);
+}
+/* end team  */
+/* satrt project  */
+.project {
+  background-color: var(--dark-coler);
+}
+/* end project  */
+/* start subscribe  */
+.subscribe {
+  background-color: var(--yellow-coler);
+}
+.subscribe input[type='text']{
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type='text']:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+.subscribe input[type='submit']{
+  background-color: var(--dark-coler);
+  color: var(--yellow-coler);
+}
+/* end subscribe  */
+/* start footer  */
+.footer {
+  background-color: var(--dark-coler);
+}
+.footer .copyright > span {
+  color: var(--green-coler);
+}
+.footer .copyright div span {
+  color: var(--yellow-coler);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* end footer  */
